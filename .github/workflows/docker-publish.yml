@@ -59,5 +59,8 @@ jobs:
         with:
           context: .
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: |
+            docker.pkg.github.com/${{ github.repository }}/octo-image:${{ github.sha }}
+            docker.pkg.github.com/${{ github.repository }}/octo-image:${{ github.ref }}
           labels: ${{ steps.meta.outputs.labels }}
+
