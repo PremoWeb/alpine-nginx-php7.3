@@ -61,6 +61,6 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: |
             ghcr.io/premoweb/alpine-nginx-php7.3:${{ github.sha }}
-            ghcr.io/premoweb/alpine-nginx-php7.3:${{ github.ref }}
+            ghcr.io/premoweb/alpine-nginx-php7.3:latest
           labels: ${{ steps.meta.outputs.labels }}
 
