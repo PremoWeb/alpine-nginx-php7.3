@@ -1,6 +1,6 @@
 FROM alpine:3.12
 
-LABEL org.opencontainers.image.source = "https://github.com/PremoWeb/alpine-nginx-php7.3"
+LABEL org.opencontainers.image.source https://github.com/premoweb/alpine-nginx-php7.3
 
 # Install packages and remove default server definition
 RUN apk --no-cache add php7 php7-fpm php7-opcache php-pdo php7-mysqli php-sqlite3 php7-json php7-openssl php7-curl \
